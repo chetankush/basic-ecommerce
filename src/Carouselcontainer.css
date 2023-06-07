@@ -1,0 +1,53 @@
+.imagesforcarousel {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  height: auto;
+  display: flex;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+}
+.carousel {
+  position: relative;
+  margin-bottom: -24%;
+}
+
+@media (max-width: 400px) {
+  .imagesforcarousel {
+    height: 300px;
+
+    margin-bottom: -30%;
+  }
+  .product {
+    display: flex;
+
+    flex-direction: column;
+  }
+}
+
+.carousel-control-prev-icon {
+}
+.sr-only {
+  visibility: hidden;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  width: 15%;
+  padding: 0;
+  color: rgba(255, 255, 255, 0);
+  text-align: center;
+  background: 0 0;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
